@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8"> 
+	<title>E-Learning Platform</title> 
+	<!-- INCLUDE CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- INCLUDING JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- INCLUDING EXTERNAL JS-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	 <script>
+   	 	function validate(){
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if ( username == "shubham" && password == "1234"){
+				alert ("Login successfully");
+				window.open('home.html');
+			}
+			else{
+				alert("Invalid");
+			}
+		}
+   	 </script>
+
+</head> 
+<body>
+<div class="jumbotron text-center top-banner" style="margin-bottom:0">
+  <img class="brand-logo" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1602827778/brand-logo.png">
+  <img class="banner-img" data-original="https://www.globalshiksha.com/assets/popoapp/img/main-banner.gif" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1602826752/banner.jpg">
+</div>
+
+<div class="container form">
+	<h2>Login</h2>
+
+<form id="form_id" method="post" name="myform">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username"  required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        
+    <button type="submit" class="btn" name="login_btn" id="submit" onclick="validate()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</form>
+</div>
+
+
+
+<div class="jumbotron text-center footer">
+  <p>Footer</p>
+  <div class="social-links col-sm-12 col-lg-12 col-md-12"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a></div>
+</div>
+</body>
+</html>
